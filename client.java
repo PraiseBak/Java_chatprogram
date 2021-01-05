@@ -11,7 +11,7 @@ import java.net.InetSocketAddress;
 import java.net.Socket; 
 import java.util.*;
 public class client {
-	private static final String Server_Ip="192.168.200.128";
+	private static final String Server_Ip="xxxxxxxxxx";
 	private static final int Server_Port=9999;
 	
 	public static void main(String []args)
