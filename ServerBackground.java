@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ServerBackground {
     public static final int PORT = 9999;
-    private static final String server_ip="192.168.200.128";
+    private static final String server_ip="xxxxxxxxxxxx";
     String nickname_arr[]=new String[10];
 	int people_num=0;
 	int Client_Add_Trigger=0;
