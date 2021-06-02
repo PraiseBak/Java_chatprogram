@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ServerBackground {
     public static final int PORT = 9999;
-    private static final String server_ip="xxxxxxxxxxxx";
+    private static final String server_ip="172.30.1.12";
     String nickname_arr[]=new String[10];
 	int people_num=0;
 	int Client_Add_Trigger=0;
@@ -41,8 +41,8 @@ public class ServerBackground {
                 socket = serverSocket.accept();
                 Socket_Arr[people_num]=socket;
                 System.out.println("연결됨"); 
-                in=new BufferedReader(new InputStreamReader(socket.getInputStream()));
-                out=new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+                in=new BufferedReader(new InputStreamReader(socket.getInputStream(),"UTF-8"));
+                out=new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(),"UTF-8"));
               
                 String num_String=String.valueOf(people_num);
                 out.write(num_String+"\n");

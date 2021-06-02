@@ -11,7 +11,7 @@ import java.net.InetSocketAddress;
 import java.net.Socket; 
 import java.util.*;
 public class client {
-	private static final String Server_Ip="xxxxxxxxxx";
+	private static final String Server_Ip="172.30.1.12";
 	private static final int Server_Port=9999;
 	
 	public static void main(String []args)
@@ -24,8 +24,8 @@ public class client {
 			
 			Connect_Socket=new Socket(Server_Ip,Server_Port);
 			System.out.println(Connect_Socket);
-			In=new BufferedReader(new InputStreamReader(Connect_Socket.getInputStream()));
-            Out=new BufferedWriter(new OutputStreamWriter(Connect_Socket.getOutputStream()));
+			In=new BufferedReader(new InputStreamReader(Connect_Socket.getInputStream(),"UTF-8"));
+            Out=new BufferedWriter(new OutputStreamWriter(Connect_Socket.getOutputStream(),"UTF-8"));
             System.out.println("클라이언트 접속됨");             
             
             String People_Num_Str=In.readLine();

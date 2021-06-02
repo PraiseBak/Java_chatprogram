@@ -17,7 +17,7 @@ public class Nickname_Ui extends JFrame
 	BufferedReader In=null;
 	BufferedWriter Out=null;
 	
-	public Nickname_Ui(String People_Num_Str,Socket Connect_Socket,BufferedWriter Out,BufferedReader In)
+	public 	Nickname_Ui(String People_Num_Str,Socket Connect_Socket,BufferedWriter Out,BufferedReader In)
 	{
 		this.Client_Socket=Connect_Socket;
 		this.In=In;
