@@ -13,7 +13,6 @@ import java.util.List;
 
 public class ServerBackground {
     public static final int PORT = 9999;
-    private static final String server_ip="";
     String nickname_arr[]=new String[10];
 	int people_num=0;
 	int Client_Add_Trigger=0;
@@ -32,7 +31,6 @@ public class ServerBackground {
             serverSocket = new ServerSocket(PORT);
             // 2. 바인딩
             
-            consoleLog("연결기다림 - " + server_ip+ ":" + PORT);
             
             // 3. 요청 대기
             while(true) 

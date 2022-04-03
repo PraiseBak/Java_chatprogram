@@ -11,7 +11,7 @@ import java.net.InetSocketAddress;
 import java.net.Socket; 
 import java.util.*;
 public class client {
-	private static final String Server_Ip="";
+	private static final String Server_Ip="192.168.0.108";
 	private static final int Server_Port=9999;
 	
 	public static void main(String []args)
@@ -36,21 +36,6 @@ public class client {
 		{
 			e.printStackTrace();
 		}
-		/*
-		finally
-		{
-			try
-			{
-				if(Connect_Socket!=null&&!Connect_Socket.isClosed())fasdfsaf
-				{ㅁ
-					Connect_Socket.close();
-				}
-			}
-			catch(IOException e)
-			{
-				e.printStackTrace();
-			}
-		}
-		*/
+		
 	}
 }

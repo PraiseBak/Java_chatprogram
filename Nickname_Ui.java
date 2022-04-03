@@ -29,7 +29,7 @@ public class Nickname_Ui extends JFrame
 		Frame.setResizable(false);
 		Frame.setLocationRelativeTo(null);
 			
-		JLabel Intro_Label=new JLabel("    자바 채팅 프로그램 made by air");
+		JLabel Intro_Label=new JLabel("    자바 채팅 프로그램 made by PraiseBak");
 		JLabel Nickname_Label=new JLabel("Nickname:");
 		Intro_Label.setFont(Intro_Label.getFont().deriveFont(25.0f));
 		
